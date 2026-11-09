@@ -1,7 +1,7 @@
 
 import os, sqlite3, json, random, secrets, string
 from functools import wraps
-from flask import Flask, request, redirect, url_for, session, flash, render_template, abort
+from flask import Flask, request, redirect, url_for, session, flash, render_template, render_template_string, abort
 from werkzeug.security import generate_password_hash, check_password_hash
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
